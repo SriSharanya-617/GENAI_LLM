@@ -1,0 +1,241 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+
+  background: linear-gradient(
+    135deg,
+    #eef2ff,
+    #f8fafc,
+    #ede9fe
+  );
+
+  min-height: 100vh;
+}
+
+/* Main */
+
+.app {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Title */
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 25px;
+
+  color: #5b21b6;
+}
+
+/* Chat Box */
+
+.chat-box {
+  height: 650px;
+
+  overflow-y: auto;
+
+  background: #ffffff;
+
+  border-radius: 30px;
+
+  padding: 25px;
+
+  border: 3px solid #312e81;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+
+}
+
+/* Messages */
+
+.message-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.message-row.user {
+  justify-content: flex-end;
+}
+
+.message-row.ai {
+  justify-content: flex-start;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+}
+
+.ai-avatar {
+  background: #ddd6fe;
+}
+
+.user-avatar {
+  background: #c7d2fe;
+}
+
+/* User Bubble */
+
+.user .message {
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #8b5cf6
+  );
+
+  color: white;
+
+  padding: 14px 20px;
+
+  border-radius: 18px;
+
+  max-width: 500px;
+
+  box-shadow:
+    0 8px 20px rgba(99,102,241,.25);
+}
+
+/* AI Bubble */
+
+.ai .message {
+  background: #f8fafc;
+
+  color: #111827;
+
+  border: 2px solid #c7d2fe;
+
+  padding: 20px;
+
+  border-radius: 18px;
+
+  max-width: 750px;
+
+  line-height: 1.8;
+
+  box-shadow:
+    0 6px 15px rgba(0,0,0,.05);
+}
+
+/* Welcome */
+
+.welcome {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.welcome h2 {
+  color: #4f46e5;
+}
+
+.welcome p {
+  color: #64748b;
+}
+
+/* Input */
+
+.input-box {
+  display: flex;
+  gap: 15px;
+
+  margin-top: 20px;
+}
+
+input {
+  flex: 1;
+
+  padding: 18px;
+
+  border-radius: 15px;
+
+  border: 2px solid #312e81;
+
+  background: white;
+
+  color: black;
+
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: #64748b;
+}
+
+input:focus {
+  outline: none;
+
+  border-color: #6366f1;
+}
+
+/* Button */
+
+button {
+  border: none;
+
+  padding: 0 30px;
+
+  border-radius: 15px;
+
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #8b5cf6
+  );
+
+  color: white;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+/* Code */
+
+pre {
+  background: #eef2ff;
+
+  border: 1px solid #c7d2fe;
+
+  padding: 15px;
+
+  border-radius: 12px;
+
+  overflow-x: auto;
+}
+
+code {
+  color: #4338ca;
+}
+
+/* Typing */
+
+.typing {
+  background: white;
+
+  color: #64748b;
+
+  padding: 15px 20px;
+
+  border-radius: 15px;
+
+  border: 2px solid #c7d2fe;
+}
